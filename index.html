@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Racsll</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("Sololo.jpg");
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="logo.png"
+                    style="width: 150px; height: auto;"></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+                <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">The Rotaract Club Of Sololo</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">The Rotaract Club Of Sololo</span><br>
+            <span class="w3-large">Hope of the North.</span>
+            <p><a href="#about"
+                    class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn
+                    more and start today</a></p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">ABOUT THE CLUB</h3>
+        <p class="w3-center w3-large">Key features of our club</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Membership</p>
+                <p>Membership in the Rotaract Club of Sololo is composed of young like minded individuals originating
+                    from the Marsabit and Isiolo counties</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Dues</p>
+                <p>In addition to the time commitment of attending fellowships, members are required to contribute KES
+                    200 per month and actively participate in projects organized by the club. This ensures continued
+                    engagement and support for the club’s initiatives.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Passion</p>
+                <p>The Rotaract Club of Sololo "Hope of the North "
+                    Our ultimate goal is to create sustainable and lasting impact within our community which is
+                    marginalized society through community service projects, leadership, and development.
+
+                    As part of Rotary International, the club aligns with the broader objectives of taking action
+                    through community and international service, learning leadership skills, and gaining a global
+                    perspective. By fostering professional development and cultivating like-minded young leaders, the
+                    club aims to implement sustainable solutions that address local challenges, ultimately empowering
+                    the community and driving meaningful change.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Quote</p>
+                <p>“I do not seek recognition for my
+                    actions . I expect to lead and be led my teammates steady my resolve and silently guide my every
+                    deed" <br>
+                <p style="text-align: right;"><b>Mohamed Duba ~ Cp</b></p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section - "We know design" -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+        <div class="w3-row-padding">
+            <div class="w3-col m6"><br><br><br>
+                <h3>Charter Certificate</h3>
+                <p>RAC Sololo C.P, V.P, P.E receiving the charter certificate. <br>After receiving the charter
+                    certificate on 29th March 2024, the club organizes for the charter party. </p>
+                <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+            </div>
+            <div class="w3-col m6">
+                <img class="w3-image w3-round-large" src="cert.jpeg" alt="Buildings" width="700" height="394">
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="w3-container" style="padding:128px 16px" id="team">
+        <h3 class="w3-center">THE TEAM</h3>
+        <p class="w3-center w3-large">RacSololo engine 2024/25 </p>
+        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="cp.png" alt="" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Mohamed Duba</h3>
+                        <p class="w3-opacity">CHARTER PRESIDENT</p>
+                        <p>"As Charter President of a Rotaract Club of Sololo am mandated to lead the newly established
+                            club by setting its vision, guiding members, and managing its operations. I represent the
+                            club within the Rotary community and beyond, fostering collaboration and service.
+                            Additionally, i mentor future leaders (i.e President Elect) to ensure smooth transitions and
+                            long-term success."</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="wario.png" alt="" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Dido Wario</h3>
+                        <p class="w3-opacity">PRESIDENT ELECT</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="nas.png" alt="" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Nasibo Sarra</h3>
+                        <p class="w3-opacity">SECRETARY</p>
+                        <p>"My responsibilities include creating links and agendas for virtual meetings, as well as
+                            documenting meeting minutes to capture key discussions and decisions. Additionally, I
+                            represent the club in communications with other clubs, fostering collaboration and
+                            relationships. Furthermore, I assist in scheduling club meetings, events, and activities to
+                            ensure effective coordination and participation.".</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="wakss.png" alt="Dan" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Waqo Qalicha</h3>
+                        <p class="w3-opacity">TREASURER</p>
+                        <p>"My authority is to oversee all funds and maintains accurate financial records, ensures
+                            transparency in financial operations and responds to inquires from club members. Moreover,
+                            I'm the one who chair the finance committee, Collect membership dues. Manage all money
+                            collected from dues and all proceeds from fundraising projects. Prepare monthly reports that
+                            accurately detail the club's finances and expenses."</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">5+</span>
+            <br>Partners
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">10+</span>
+            <br>Projects Done
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">20+</span>
+            <br>Active members
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">50+</span>
+            <br>Meetings
+        </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding:128px 16px" id="work">
+        <h3 class="w3-center">OUR WORK</h3>
+        <p class="w3-center w3-large">What we've done as our projects</p>
+
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="obitu.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Food preparation in Obitu Children's home</b></p>
+                    <p>Rotract Club Of Sololo members serving Rice and Ethiopian Anjera with got meet during a visit at
+                        obbitu children's home on 6th Jan 2023</p>
+                </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="obitu1.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Photo session</b></p>
+                    <p>A photo session with Obbitu children's home family, RAC Sololo members and friends Of Rac sololo
+                    </p>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <img src="langata.jpeg" alt="Norway" style="width:100%" height="100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>RacSololo at Ulinzi Stadium</b></p>
+                    <p>Rac Sololo joined other Rotract and Rotary Clubs at Ulinzi stadium for sunshine rally to provide
+                        a day of entertainment and joy to needy children's from School in Nairobi and it environs</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="obitu2.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Activities at Obitu Children's home</b></p>
+                    <p>Rac Sololo members planting tree at obbitu children's home in Sololo. Apart from tree planting we
+                        also did mentorship for the children, Donating food items and also sanitary pads</p>
+                </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="RYLA.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>A group photo with country Rotaract team in RYLA in Nakuru</b></p>
+                    <p>Ryla - Rotary Youth Leadership Award
+                        The Rotaract club of sololo participated in a RYLA in Nakuru.
+                        RacSololo was awarded a ryla pin
+                        For the commitment and showing up in good numbers,.</p>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <img src="charteraward.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Charter certificate</b></p>
+                    <p>Receiving our official charter certificate from our Mother Club, Rotary club of Nairobi Muthaiga
+                        North</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+                title="Close Modal Image">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="w3-container w3-light-grey w3-padding-64">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <h3>Objectives of RacSololo</h3>
+                    <p>Rotaract clubs aim to create positive change in their communities through hands-on service
+                        projects and initiatives that address local needs. <br>Rotaracts provide opportunities for members to
+                        enhance their leadership, communication, and professional skills through workshops, networking
+                        events, and mentorship. <br>Rotaract clubs foster friendship and camaraderie among young adults,
+                        promoting a sense of belonging and encouraging collaboration on various projects and activities.
+                    </p>
+                </div>
+                <div class="w3-col m6">
+                    <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Community services</p>
+                    <div class="w3-grey">
+                        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+                    </div>
+                    <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Professional development</p>
+                    <div class="w3-grey">
+                        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+                    </div>
+                    <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Fellowship</p>
+                    <div class="w3-grey">
+                        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+            <h3 class="w3-center">CONTACT</h3>
+            <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+            <div style="margin-top:48px">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Sololo, Kenya</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +254716362507</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rotaractclubofsololo@gmail.com</p>
+                <br>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                    <p>
+                        <button class="w3-button w3-black" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </p>
+                </form>
+                <!-- Image of location/map -->
+                <img src="sll.jpeg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </footer>
+
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                } else {
+                    mySidebar.style.display = 'block';
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+            }
+        </script>
+
+</body>
+
+</html>
